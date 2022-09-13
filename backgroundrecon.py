@@ -2,8 +2,6 @@ import numpy as np
 import awkward as ak
 import vector
 from itertools import combinations
-import matplotlib.pyplot as plt
-import mplhep as hep
 
 f="./FH_2_nTuple.npy"
 #f="1l_2_nTuple.npy"
@@ -275,20 +273,4 @@ np.save('/home/yeobi97/phase2/workspace/reconstruction/FHreconarray',out)
 #np.save('/home/yeobi97/phase2/workspace/reconstruction/WZreconarray',out)
 #np.save('/home/yeobi97/phase2/workspace/reconstruction/ZZreconarray',out)
 
-#plt.figure(figsize=(8,8))
-#bins = np.linspace(0,50,100)
-#plt.hist(t1, range=(0,500), bins=100, histtype='step',linewidth=2,color='blue')
-#plt.hist(t2, range=(0,500), bins=100, histtype='step', linewidth=2, color='red')
-#plt.show()
-#plt.savefig('nTuplereconresult')
-#import mplhep as hep
-#plt.style.use(hep.style.CMS)
-#plt.rcParams["figure.figsize"]=(8,8)
-#plt.xlim(0,500)
-#plt.hist(out,range=(0,500),bins=100,histtype='step',color='blue')
-#plt.hist(out,range=(0,500),bins=100,histtype='step',color='red')
-#plt.xlabel('M$_{jjj}$ [GeV]')
-#plt.ylabel('Arb. Unit / 5 GeV')
-#plt.legend()
-#plt.savefig('nTuplebackgroundreconstructionresult')
-#plt.show()
+
