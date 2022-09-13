@@ -5,7 +5,13 @@ from itertools import combinations
 import matplotlib.pyplot as plt
 import mplhep as hep
 
-f="./1l_2_nTuple.npy"
+f="./FH_2_nTuple.npy"
+#f="1l_2_nTuple.npy"
+#f="TTW_nTuple.npy"
+#f="TTZ_nTuple.npy"
+#f="./WW_nTuple.npy"
+#f="./WZ_nTuple.npy"
+#f="./ZZ_nTuple.npy"
 
 njpt=np.load(f,allow_pickle=True)[()]['normalJet_PT']
 njeta=np.load(f,allow_pickle=True)[()]['normalJet_Eta']
@@ -261,7 +267,13 @@ t2=np.array(t2)
 
 out=np.concatenate((t1,t2))
 
-np.save('/home/yeobi97/phase2/workspace/reconstruction/Semileptonic1array',out)
+np.save('/home/yeobi97/phase2/workspace/reconstruction/FHreconarray',out)
+#np.save('/home/yeobi97/phase2/workspace/reconstruction/SLreconarray',out)
+#np.save('/home/yeobi97/phase2/workspace/reconstruction/TTWreconarray',out)
+#np.save('/home/yeobi97/phase2/workspace/reconstruction/TTZreconarray',out)
+#np.save('/home/yeobi97/phase2/workspace/reconstruction/WWreconarray',out)
+#np.save('/home/yeobi97/phase2/workspace/reconstruction/WZreconarray',out)
+#np.save('/home/yeobi97/phase2/workspace/reconstruction/ZZreconarray',out)
 
 #plt.figure(figsize=(8,8))
 #bins = np.linspace(0,50,100)
